@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Mi Semana">
-<link rel="apple-touch-icon" href="icon-180v2.png">
+<link rel="apple-touch-icon" href="icon-180.png">
 <meta name="theme-color" content="#F2F2F7">
 
 <style>
@@ -137,20 +137,26 @@ function defaultWeekly(){
   const mk = (time, cat, activity) => ({id: uid(), time, cat, activity});
   return {
     normal: [
-      mk("8:00-9:00","meal","Desayuno"), mk("9:00","med","Medicamento"), mk("9:00-10:30","pro","POO"),
-      mk("10:30-11:00","rest","Descanso"), mk("11:00-1:00","eng","Inglés"),
-      mk("13:00-14:00","meal","Almuerzo"), mk("14:00-15:30","intern","Internships - Assessments"),
-      mk("15:30-17:30","sport","Correr 5km + Burpees + ducha"), mk("17:30-20:30","pro","NFL - Modelo predictivo"),
-      mk("20:30-21:30","meal","Cena"), mk("21:30","med","Medicamento"),
-      mk("21:30-23:00","pro","NFL - Modelo predictivo"),
+      mk("8:00-8:30","med","Medicamento desayuno + Desayuno"), mk("8:30-10:00","pro","NFL - Modelo predictivo"),
+      mk("10:00-10:15","rest","Descanso"), mk("10:15-11:45","pro","POO - Teoría / ejercicios"),
+      mk("11:45-12:00","rest","Descanso"), mk("12:00-13:00","meal","Almuerzo"),
+      mk("13:00-13:30","rest","Descanso post-almuerzo"), mk("13:30-15:00","intern","Internships - Assessments / aplicaciones"),
+      mk("15:00-16:00","sport","Correr 5km / Burpees"), mk("16:00-16:20","rest","Descanso"),
+      mk("16:20-17:50","eng","Inglés intensivo"), mk("17:50-18:15","rest","Descanso"),
+      mk("18:15-19:30","intern","Internships - Research / prep entrevistas"), mk("19:30-20:15","meal","Cena"),
+      mk("20:15-20:45","med","Medicamento noche"), mk("20:45-22:00","rest","Tiempo libre / relax"),
+      mk("22:00-23:00","rest","Cierre del día"),
     ],
     finde: [
-      mk("8:00-9:00","meal","Desayuno"), mk("9:00","med","Medicamento"), mk("9:00-10:30","pro","POO"),
-      mk("10:30-11:00","rest","Descanso"), mk("11:00-1:00","eng","Inglés"),
-      mk("13:00-14:00","meal","Almuerzo"), mk("14:00-15:30","intern","Internships - Assessments"),
-      mk("15:30-17:30","sport","Correr 5km + Burpees + ducha"), mk("17:30-20:30","pro","NFL - Modelo predictivo"),
-      mk("20:30-21:30","meal","Cena"), mk("21:30","med","Medicamento"),
-      mk("21:30-23:00","pro","NFL - Modelo predictivo"),
+      mk("8:00-8:30","med","Medicamento desayuno + Desayuno"), mk("8:30-10:00","pro","POO - Proyecto aplicado"),
+      mk("10:00-10:15","rest","Descanso"), mk("10:15-11:45","pro","NFL - Revisión y ajustes de la semana"),
+      mk("11:45-12:00","rest","Descanso"), mk("12:00-13:00","meal","Almuerzo"),
+      mk("13:00-13:30","rest","Descanso post-almuerzo"), mk("13:30-15:00","intern","Internships - Prep entrevistas / descanso activo"),
+      mk("15:00-16:00","sport","Burpees + core / Correr 5km suave"), mk("16:00-16:20","rest","Descanso"),
+      mk("16:20-17:50","eng","Inglés intensivo (repaso)"), mk("17:50-18:15","rest","Descanso"),
+      mk("18:15-19:30","rest","Repaso libre / planeación próxima semana"), mk("19:30-20:15","meal","Cena"),
+      mk("20:15-20:45","med","Medicamento noche"), mk("20:45-22:00","rest","Tiempo libre / relax"),
+      mk("22:00-23:00","rest","Cierre del día"),
     ],
   };
 }
